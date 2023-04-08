@@ -163,6 +163,43 @@ div.fadein {
     }
 
     100% {
-        transform:  translateY(0px);
+        transform: translateY(0px);
     }
+}
+
+@media screen and (max-width:600px) {
+    section {
+        background-image: linear-gradient(#000e2e, #004f5a);
+    }
+
+    .score h2 {
+        font-size: 20px;
+
+    }
+
+    .intro h1 {
+        font-size: 35px;
+    }
+
+    .intro button,
+    .match button {
+        width: 100px;
+        height: 40px;
+        background: none;
+        border: none;
+        color: rgb(224, 224, 224);
+        font-size: 20px;
+        background: rgb(45, 117, 96);
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+    .match {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.5s ease 0.5s;
+    }
+    
 }
